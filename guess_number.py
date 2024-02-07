@@ -6,6 +6,8 @@ while guess != 'q':
     if guess == number:
         print("Congratulations! You guessed the right number.")
         guess = 'q'
+    elif guess < number:
+        guess = int(input("Too low, try again! (or q to quit) "))
     else:
-        guess = int(input("Try again! (or q to quit) "))
+        guess = int(input("Too high, try again! (or q to quit) "))
         
